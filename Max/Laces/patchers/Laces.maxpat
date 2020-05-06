@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1954.0, 79.0, 1852.0, 967.0 ],
+		"rect" : [ 1954.0, 79.0, 1452.0, 967.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,18 @@
 		"style" : "Neon City",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 817.320109784603119, 5.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.43921568627451, 0.43921568627451, 0.43921568627451, 0.0 ],
 					"checkedcolor" : [ 0.996078431372549, 0.525490196078431, 0.525490196078431, 1.0 ],
@@ -2351,7 +2363,6 @@
 			}
 , 			{
 				"box" : 				{
-					"checkedcolor" : [ 0.996078431372549, 0.984313725490196, 0.0, 1.0 ],
 					"id" : "obj-102",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
@@ -2548,13 +2559,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-46",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 836.620110809803009, 838.942353665828705, 50.0, 35.0 ],
-					"text" : "1649.44"
+					"patching_rect" : [ 836.620110809803009, 838.942353665828705, 50.0, 22.0 ],
+					"text" : "0.26"
 				}
 
 			}
@@ -2928,7 +2938,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 726.620110809803009, 584.0, 50.0, 22.0 ],
-					"text" : "/p1"
+					"text" : "/p3"
 				}
 
 			}
@@ -3004,8 +3014,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.43921568627451, 0.43921568627451, 0.43921568627451, 1.0 ],
-					"fgcolor" : [ 0.996078431372549, 0.984313725490196, 0.0, 1.0 ],
 					"id" : "obj-18",
 					"markercolor" : [ 0.588235294117647, 0.588235294117647, 0.588235294117647, 1.0 ],
 					"maxclass" : "spectroscope~",
@@ -3093,7 +3101,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.43921568627451, 0.43921568627451, 0.43921568627451, 1.0 ],
 					"id" : "obj-23",
 					"maxclass" : "spectroscope~",
 					"numinlets" : 2,
@@ -3402,24 +3409,6 @@
 											}
 , 											{
 												"box" : 												{
-													"embed_buffers" : 													{
-														"soundbuffer.1" : "0-0 1 talking.wav",
-														"soundbuffer.2" : "0-1 2 finger_taps_2.wav",
-														"soundbuffer.3" : "0-2 3 finger_taps.wav",
-														"soundbuffer.4" : "0-3 4 wispering.wav",
-														"soundbuffer.5" : "0-4 5 wispers_and_crying.mp3",
-														"soundbuffer.6" : "0-5 6 3d_printer.wav",
-														"soundbuffer.7" : "0-6 7 snow_plow.flac",
-														"soundbuffer.8" : "0-7 8 car_passing.wav",
-														"soundbuffer.9" : "0-8 9 train.wav",
-														"soundbuffer.10" : "0-9 10 crunch.wav",
-														"soundbuffer.11" : "1-0 11 typing.wav",
-														"soundbuffer.12" : "1-1 12 typing_2.wav",
-														"soundbuffer.13" : "1-2 13 airplane_passover.flac",
-														"soundbuffer.14" : "1-3 14 inner_mind.wav",
-														"soundbuffer.15" : "1-4 15 dripping.wav"
-													}
-,
 													"id" : "obj-30",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
@@ -3847,8 +3836,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3866,8 +3855,8 @@
 , 							{
 								"name" : "rsliderGold",
 								"default" : 								{
-									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4567,6 +4556,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-38", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-40", 14 ]
 				}
@@ -4867,7 +4863,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "_poly_play_laces_object.maxpat",
-				"bootpath" : "~/Desktop/Laces/Max",
+				"bootpath" : "~/Desktop/Laces/Max/Laces/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -4899,17 +4895,11 @@
 , 			{
 				"name" : "Neon City",
 				"default" : 				{
+					"elementcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"editing_bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"fontname" : [ "Arial" ],
-					"accentcolor" : [ 0.552941176470588, 0.552941176470588, 0.552941176470588, 1.0 ],
-					"elementcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"locked_bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
-					"color" : [ 0.996078431372549, 0.984313725490196, 0.0, 1.0 ],
-					"bgcolor" : [ 0.43921568627451, 0.43921568627451, 0.43921568627451, 1.0 ],
 					"clearcolor" : [ 0.0, 0.996078431372549, 0.964705882352941, 0.0 ],
 					"textcolor_inverse" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"textjustification" : [ 0 ],
-					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"patchlinecolor" : [ 0.996078431372549, 0.984313725490196, 0.0, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
@@ -4920,7 +4910,13 @@
 						"proportion" : 0.5,
 						"autogradient" : 0.0
 					}
-
+,
+					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"locked_bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"textjustification" : [ 0 ],
+					"bgcolor" : [ 0.43921568627451, 0.43921568627451, 0.43921568627451, 1.0 ],
+					"color" : [ 0.996078431372549, 0.984313725490196, 0.0, 1.0 ],
+					"accentcolor" : [ 0.552941176470588, 0.552941176470588, 0.552941176470588, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -4929,9 +4925,9 @@
 , 			{
 				"name" : "Neon City Pink",
 				"default" : 				{
-					"color" : [ 0.996078431372549, 0.0, 0.952941176470588, 1.0 ],
 					"selectioncolor" : [ 0.996078431372549, 0.364705882352941, 0.968627450980392, 1.0 ],
-					"patchlinecolor" : [ 0.996078431372549, 0.0, 0.952941176470588, 1.0 ]
+					"patchlinecolor" : [ 0.996078431372549, 0.0, 0.952941176470588, 1.0 ],
+					"color" : [ 0.996078431372549, 0.0, 0.952941176470588, 1.0 ]
 				}
 ,
 				"parentstyle" : "Neon City",
@@ -5030,8 +5026,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -5049,8 +5045,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
