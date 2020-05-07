@@ -1,0 +1,24 @@
+{
+	"filetype" : "C74Snapshot",
+	"version" : 2,
+	"minorversion" : 0,
+	"name" : "Laces Thu May 7 10:00 AM",
+	"origin" : "Laces",
+	"type" : "patcher",
+	"subtype" : "Undefined",
+	"embed" : 0,
+	"snapshot" : 	{
+		"valuedictionary" : 		{
+			"parameter_values" : 			{
+				"live.gain~" : -28.181565053918511,
+				"blob" : 				{
+					"umenu" : [ 3 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
