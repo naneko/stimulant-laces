@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1852.0, 963.0 ],
+		"rect" : [ 34.0, 45.0, 1852.0, 997.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -22,11 +22,11 @@
 		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
-		"lefttoolbarpinned" : 0,
-		"toptoolbarpinned" : 0,
-		"righttoolbarpinned" : 0,
-		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
+		"lefttoolbarpinned" : 2,
+		"toptoolbarpinned" : 2,
+		"righttoolbarpinned" : 2,
+		"bottomtoolbarpinned" : 2,
+		"toolbars_unpinned_last_save" : 15,
 		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
 		"enablehscroll" : 1,
@@ -37,7 +37,7 @@
 		"tags" : "",
 		"style" : "Neon City",
 		"subpatcher_template" : "",
-		"showontab" : 1,
+		"workspacedisabled" : 1,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-118",
@@ -850,12 +850,12 @@
 					"patching_rect" : [ 1554.700964570045471, 656.5, 148.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 6.0,
 							"parameter_shortname" : "level",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~"
+							"parameter_longname" : "live.gain~",
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -1158,7 +1158,7 @@
 					"patching_rect" : [ 699.620110809803009, 1494.74467215547179, 86.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 921.455970525741577, 310.417832851409912, 50.705880880355835, 20.0 ],
-					"text" : "0",
+					"text" : "55",
 					"textjustification" : 2
 				}
 
@@ -1844,7 +1844,7 @@
 					"patching_rect" : [ 54.109329789876938, 1281.21681010723114, 67.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 920.161851406097412, 228.928868293762207, 51.0, 20.0 ],
-					"text" : "19999",
+					"text" : "19992",
 					"textjustification" : 2
 				}
 
@@ -4337,7 +4337,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-1",
@@ -4571,7 +4570,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 208.669007062911987, 166.18080872297287, 109.730993032455444, 22.0 ],
-									"text" : "19999, 0 50000"
+									"text" : "19992, 0 55000"
 								}
 
 							}
@@ -4599,7 +4598,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 166.399199306964874, 130.7931028008461, 22.0 ],
-									"text" : "19999, 20000 10000"
+									"text" : "19992, 20000 10000"
 								}
 
 							}
@@ -5454,13 +5453,13 @@
 					"presentation_rect" : [ 519.315789461135864, 207.042797088623047, 159.503400802612305, 23.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 5.0,
 							"parameter_initial" : [ 3 ],
 							"parameter_shortname" : "umenu",
 							"parameter_type" : 3,
 							"parameter_longname" : "umenu",
 							"parameter_initial_enable" : 1,
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_mmax" : 5.0
 						}
 
 					}
@@ -5791,7 +5790,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 836.620110809803009, 838.942353665828705, 50.0, 22.0 ],
-					"text" : "0.11"
+					"text" : "0.27"
 				}
 
 			}
@@ -6395,7 +6394,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1852.0, 937.0 ],
+						"rect" : [ 34.0, 79.0, 1452.0, 937.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -6422,7 +6421,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"showontab" : 1,
+						"showontab" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-66",
@@ -7085,8 +7084,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -7104,8 +7103,8 @@
 , 							{
 								"name" : "rsliderGold",
 								"default" : 								{
-									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -9058,16 +9057,8 @@
 , 			{
 				"name" : "Neon City",
 				"default" : 				{
-					"editing_bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
-					"fontname" : [ "Arial" ],
-					"elementcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"textjustification" : [ 0 ],
-					"color" : [ 0.996078431372549, 0.984313725490196, 0.0, 1.0 ],
-					"clearcolor" : [ 0.0, 0.996078431372549, 0.964705882352941, 0.0 ],
-					"textcolor_inverse" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"bgcolor" : [ 0.43921568627451, 0.43921568627451, 0.43921568627451, 1.0 ],
-					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"patchlinecolor" : [ 0.996078431372549, 0.984313725490196, 0.0, 1.0 ],
+					"editing_bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.2, 0.2, 0.2, 1.0 ],
@@ -9078,8 +9069,16 @@
 						"autogradient" : 0.0
 					}
 ,
+					"bgcolor" : [ 0.43921568627451, 0.43921568627451, 0.43921568627451, 1.0 ],
+					"textjustification" : [ 0 ],
 					"locked_bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
-					"accentcolor" : [ 0.552941176470588, 0.552941176470588, 0.552941176470588, 1.0 ]
+					"accentcolor" : [ 0.552941176470588, 0.552941176470588, 0.552941176470588, 1.0 ],
+					"elementcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"color" : [ 0.996078431372549, 0.984313725490196, 0.0, 1.0 ],
+					"clearcolor" : [ 0.0, 0.996078431372549, 0.964705882352941, 0.0 ],
+					"textcolor_inverse" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"fontname" : [ "Arial" ]
 				}
 ,
 				"parentstyle" : "",
@@ -9088,9 +9087,9 @@
 , 			{
 				"name" : "Neon City Pink",
 				"default" : 				{
+					"patchlinecolor" : [ 0.996078431372549, 0.0, 0.952941176470588, 1.0 ],
 					"color" : [ 0.996078431372549, 0.0, 0.952941176470588, 1.0 ],
-					"selectioncolor" : [ 0.996078431372549, 0.364705882352941, 0.968627450980392, 1.0 ],
-					"patchlinecolor" : [ 0.996078431372549, 0.0, 0.952941176470588, 1.0 ]
+					"selectioncolor" : [ 0.996078431372549, 0.364705882352941, 0.968627450980392, 1.0 ]
 				}
 ,
 				"parentstyle" : "Neon City",
@@ -9189,8 +9188,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -9208,8 +9207,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
